@@ -50,7 +50,7 @@
 
     <main>
         <!-- Hero Section -->
-        <section class="relative pt-32 pb-20 text-center overflow-hidden">
+        <section class="relative pt-32 pb-20 md:pt-40 md:pb-24 text-center overflow-hidden">
             <div class="glow-effect top-0 -left-40"></div>
             <div class="glow-effect bottom-0 -right-40 opacity-70"></div>
             <div class="container mx-auto px-6 relative">
@@ -63,10 +63,6 @@
                 <div class="mt-10 flex justify-center gap-4">
                     <a href="#solution" class="bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-8 py-3 rounded-lg transition-colors text-lg">Discover the Solution</a>
                     <a href="#how-it-works" class="bg-slate-700 hover:bg-slate-600 text-white font-semibold px-8 py-3 rounded-lg transition-colors text-lg">See How It Works</a>
-                </div>
-                <div class="mt-16 mx-auto max-w-5xl bg-slate-800/50 p-4 rounded-xl shadow-2xl border border-slate-700">
-                    <!-- Placeholder for product image/diagram -->
-                     <img src="https://placehold.co/1000x500/1e293b/4f46e5?text=RAGflow+UI+Diagram" alt="RAGflow dashboard showing data processing pipeline" class="rounded-lg">
                 </div>
             </div>
         </section>
@@ -111,56 +107,35 @@
         <!-- Solution Section -->
         <section id="solution" class="py-20 bg-slate-950/50">
             <div class="container mx-auto px-6">
-                <div class="text-center mb-12">
+                <div class="text-center mb-16">
                     <h3 class="text-lg font-semibold text-indigo-400 uppercase">The RAGflow Solution</h3>
                     <h2 class="text-3xl md:text-4xl font-bold text-white mt-2">Precision, Control, and Understanding</h2>
                     <p class="mt-4 text-slate-400 max-w-2xl mx-auto">We replace the black box with a transparent, intelligent workflow that puts you in control of your knowledge base.</p>
                 </div>
-                <div class="space-y-12">
+                <div class="space-y-16 max-w-3xl mx-auto">
                     <!-- Solution 1 -->
-                    <div class="flex flex-col md:flex-row items-center gap-12">
-                        <div class="md:w-1/2">
-                            <div class="bg-indigo-600/10 text-indigo-400 rounded-lg w-12 h-12 flex items-center justify-center mb-4">
-                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 18a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2"></path><rect x="3" y="4" width="18" height="18" rx="2"></rect><circle cx="12" cy="10" r="2"></circle><line x1="8" y1="2" x2="8" y2="4"></line><line x1="16" y1="2" x2="16" y2="4"></line></svg>
-                            </div>
-                            <h3 class="text-2xl font-bold text-white">Interactive Q&A Extraction Agent</h3>
-                            <p class="mt-4 text-slate-400">Our RAG agent doesn't just slice your documents. It reads and comprehends PDFs, allowing you to engage in a Q&A dialogue to extract precisely the information you need. You create perfect, context-rich data snippets for your knowledge base.</p>
+                    <div>
+                        <div class="bg-indigo-600/10 text-indigo-400 rounded-lg w-12 h-12 flex items-center justify-center mb-4">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 18a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2"></path><rect x="3" y="4" width="18" height="18" rx="2"></rect><circle cx="12" cy="10" r="2"></circle><line x1="8" y1="2" x2="8" y2="4"></line><line x1="16" y1="2" x2="16" y2="4"></line></svg>
                         </div>
-                        <div class="md:w-1/2">
-                           <div class="bg-slate-800 p-4 rounded-lg border border-slate-700 shadow-lg">
-                               <img src="https://placehold.co/500x300/1e293b/a5b4fc?text=Q&A+Extraction+UI" alt="UI showing a user asking questions to a PDF document" class="rounded-md">
-                           </div>
-                        </div>
+                        <h3 class="text-2xl font-bold text-white">Interactive Q&A Extraction Agent</h3>
+                        <p class="mt-4 text-slate-400">Our RAG agent doesn't just slice your documents. It reads and comprehends PDFs, allowing you to engage in a Q&A dialogue to extract precisely the information you need. You create perfect, context-rich data snippets for your knowledge base.</p>
                     </div>
                      <!-- Solution 2 -->
-                    <div class="flex flex-col md:flex-row-reverse items-center gap-12">
-                        <div class="md:w-1/2">
-                            <div class="bg-indigo-600/10 text-indigo-400 rounded-lg w-12 h-12 flex items-center justify-center mb-4">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg>
-                            </div>
-                            <h3 class="text-2xl font-bold text-white">Vector DB Hotfix & Tuning</h3>
-                            <p class="mt-4 text-slate-400">Found an error or an outdated fact? With RAGflow, you can directly 'hotfix' the vector database. Insert the correct Q&A pair or updated information linked directly to the source document, ensuring your RAG is always accurate and improving over time.</p>
+                    <div>
+                        <div class="bg-indigo-600/10 text-indigo-400 rounded-lg w-12 h-12 flex items-center justify-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg>
                         </div>
-                        <div class="md:w-1/2">
-                             <div class="bg-slate-800 p-4 rounded-lg border border-slate-700 shadow-lg">
-                               <img src="https://placehold.co/500x300/1e293b/a5b4fc?text=Vector+DB+Hotfix+UI" alt="UI showing vector database entries being edited and updated" class="rounded-md">
-                           </div>
-                        </div>
+                        <h3 class="text-2xl font-bold text-white">Vector DB Hotfix & Tuning</h3>
+                        <p class="mt-4 text-slate-400">Found an error or an outdated fact? With RAGflow, you can directly 'hotfix' the vector database. Insert the correct Q&A pair or updated information linked directly to the source document, ensuring your RAG is always accurate and improving over time.</p>
                     </div>
                     <!-- Solution 3 -->
-                    <div class="flex flex-col md:flex-row items-center gap-12">
-                        <div class="md:w-1/2">
-                            <div class="bg-indigo-600/10 text-indigo-400 rounded-lg w-12 h-12 flex items-center justify-center mb-4">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="18" x2="12" y2="12"></line><line x1="9" y1="15" x2="15" y2="15"></line></svg>
-                            </div>
-                            <h3 class="text-2xl font-bold text-white">Universal PDF Conversion</h3>
-                            <p class="mt-4 text-slate-400">End the format chaos. RAGflow automatically converts all your uploaded documents—Word, TXT, HTML, even messy scans—into a clean, standardized PDF format. This ensures consistent processing and a reliable foundation for our extraction agent to work on.</p>
+                    <div>
+                        <div class="bg-indigo-600/10 text-indigo-400 rounded-lg w-12 h-12 flex items-center justify-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="18" x2="12" y2="12"></line><line x1="9" y1="15" x2="15" y2="15"></line></svg>
                         </div>
-                        <div class="md:w-1/2">
-                             <div class="bg-slate-800 p-4 rounded-lg border border-slate-700 shadow-lg">
-                               <img src="https://placehold.co/500x300/1e293b/a5b4fc?text=File+Conversion+Process" alt="Diagram showing different file types being converted to PDF" class="rounded-md">
-                           </div>
-                        </div>
+                        <h3 class="text-2xl font-bold text-white">Universal PDF Conversion</h3>
+                        <p class="mt-4 text-slate-400">End the format chaos. RAGflow automatically converts all your uploaded documents—Word, TXT, HTML, even messy scans—into a clean, standardized PDF format. This ensures consistent processing and a reliable foundation for our extraction agent to work on.</p>
                     </div>
                 </div>
             </div>
@@ -175,7 +150,7 @@
                 </div>
                 <div class="relative">
                      <!-- Connecting line -->
-                    <div class="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-slate-700 -translate-y-1/2"></div>
+                    <div class="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-slate-700 -translate-y-1/2" style="top: 2rem;"></div>
                     <div class="grid md:grid-cols-3 gap-8 relative">
                         <!-- Step 1 -->
                         <div class="bg-slate-800 p-8 rounded-xl border border-slate-700 text-center">
@@ -236,3 +211,4 @@
 
 </body>
 </html>
+
